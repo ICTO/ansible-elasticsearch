@@ -1,0 +1,7 @@
+---
+# Install Paramedic dashboard
+- name: "Install Paramedic dashboard"
+  command: ${elasticsearch.plugin} -install ${paramedic.name} creates=${paramedic.index}
+  when_boolean: ${with_paramedic}
+  tags:
+    - paramedic

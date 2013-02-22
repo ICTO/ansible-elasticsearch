@@ -1,0 +1,4 @@
+---
+paramedic:
+  index: '/usr/share/elasticsearch/plugins/paramedic/_site/index.html'
+  name: 'karmi/elasticsearch-paramedic'

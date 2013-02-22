@@ -1,0 +1,11 @@
+---
+elasticsearch:
+  url: 'http://download.elasticsearch.org/elasticsearch/elasticsearch'
+  debian_package: 'elasticsearch-0.20.5.deb'
+  service: 'elasticsearch'
+  dependencies:
+    - 'openjdk-6-jre'
+    - 'openjdk-6-jdk'
+  plugin: '/usr/share/elasticsearch/bin/plugin'
+
+tmp_dir: '/tmp'
