@@ -1,11 +1,12 @@
 ---
-- hosts: $hosts
+- hosts: elasticsearch
   user: $user
   sudo: yes
   sudo_user: root
 
   vars_files:
     - vars/elasticsearch.yml
+    - vars/paramedic.yml
 
   tasks:
     - include: tasks/setup.yml

@@ -1,7 +1,7 @@
 ---
 elasticsearch:
   url: 'http://download.elasticsearch.org/elasticsearch/elasticsearch'
-  debian_package: 'elasticsearch-0.20.5.deb'
+  debian_package: 'elasticsearch-0.20.2.deb'
   service: 'elasticsearch'
   dependencies:
     - 'openjdk-6-jre'
