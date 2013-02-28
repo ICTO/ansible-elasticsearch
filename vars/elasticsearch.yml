@@ -7,5 +7,6 @@ elasticsearch:
     - 'openjdk-6-jre'
     - 'openjdk-6-jdk'
   plugin: '/usr/share/elasticsearch/bin/plugin'
+  config: '/etc/elasticsearch/elasticsearch.yml'
 
 tmp_dir: '/tmp'

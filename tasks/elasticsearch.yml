@@ -28,6 +28,14 @@
   tags:
     - elasticsearch
 
+# Change Elasticsearch bind IP
+- name: "Change Elasticsearch bind IP: ${elasticsearch.config}"
+  lineinfile: "dest=${elasticsearch.config} state=present regexp='^network.host' insertafter='# network.host' line='network.host: ${with_elasticsearch_ip}'"
+  notify:
+    - "Restart Elasticsearch"
+  tags:
+    - elasticsearch
+
 # Ensure Elasticsearch is running
 - name: "Ensure Elasticsearch is running"
   service: name=${elasticsearch.service} state=started
