@@ -26,7 +26,7 @@ Any Ansible version >= 1.0 should work. If not, please use the issue tracker to 
 ### Get the code
 
 ```bash
-$ git clone git@github.ugent.be:tberton/ansible-elasticsearch.git
+$ git clone git@github.com:ICTO/ansible-elasticsearch.git
 ```
 
 ### Create an Ansible inventory file
