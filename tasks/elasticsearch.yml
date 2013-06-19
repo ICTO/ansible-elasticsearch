@@ -15,7 +15,7 @@
 
 # Install Elasticsearch
 - name: "Install Elasticsearch package: ${elasticsearch.debian_package}"
-  shell: "dpkg -i -E ${tmp_dir}/${elasticsearch.debian_package} 2>&1 | grep skipping | wc -l"
+  shell: "dpkg -i -E --force-confnew ${tmp_dir}/${elasticsearch.debian_package} 2>&1 | grep skipping | wc -l"
   when_changed: ${elasticsearch_deb}
   tags:
     - elasticsearch
