@@ -45,4 +45,29 @@ $ ansible-playbook -k -i ansible.host elasticsearch.yml -u vagrant
 ### Example output
 
 ```
+SSH password: 
+
+PLAY [Elasticsearch] ********************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [127.0.0.1]
+
+TASK: [ansible-elasticsearch | Install Elasticsearch dependencies] ************ 
+ok: [127.0.0.1] => (item=openjdk-6-jre)
+ok: [127.0.0.1] => (item=openjdk-6-jdk)
+
+TASK: [ansible-elasticsearch | Fetch Elasticsearch] *************************** 
+ok: [127.0.0.1]
+
+TASK: [ansible-elasticsearch | Install Elasticsearch package] ***************** 
+skipping: [127.0.0.1]
+
+TASK: [ansible-elasticsearch | Ensure Elasticsearch is running] *************** 
+ok: [127.0.0.1]
+
+TASK: [ansible-elasticsearch | Install Paramedic dashboard] ******************* 
+skipping: [127.0.0.1]
+
+PLAY RECAP ******************************************************************** 
+127.0.0.1                  : ok=4    changed=0    unreachable=0    failed=0  
 ```
