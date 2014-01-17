@@ -1,3 +1,0 @@
----
-- name: "Restart Elasticsearch"
-  service: name=${elasticsearch.service} state=restarted

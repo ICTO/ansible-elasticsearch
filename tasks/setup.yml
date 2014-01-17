@@ -1,6 +1,0 @@
----
-# Install Elasticsearch
-- include: tasks/elasticsearch.yml
-
-# Install Paramedic dashboard
-- include: tasks/paramedic.yml
